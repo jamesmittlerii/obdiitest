@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D45AF52A2EB59A1C00BD906E /* SwiftOBD2 in Frameworks */ = {isa = PBXBuildFile; productRef = D45AF5292EB59A1C00BD906E /* SwiftOBD2 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D47D3F0A2EB5919C002F9253 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,16 +39,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45AF52A2EB59A1C00BD906E /* SwiftOBD2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D45AF5282EB59A1C00BD906E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D47D3F032EB5919C002F9253 = {
 			isa = PBXGroup;
 			children = (
 				D47D3F0E2EB5919C002F9253 /* obdii_play */,
+				D45AF5282EB59A1C00BD906E /* Frameworks */,
 				D47D3F0D2EB5919C002F9253 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +90,7 @@
 			);
 			name = obdii_play;
 			packageProductDependencies = (
+				D45AF5292EB59A1C00BD906E /* SwiftOBD2 */,
 			);
 			productName = obdii_play;
 			productReference = D47D3F0C2EB5919C002F9253 /* obdii_play */;
@@ -106,6 +120,9 @@
 			);
 			mainGroup = D47D3F032EB5919C002F9253;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4E8A6E42EB59762003622F4 /* XCLocalSwiftPackageReference "../SwiftOBD2" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D47D3F0D2EB5919C002F9253 /* Products */;
 			projectDirPath = "";
@@ -252,7 +269,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L97LVVC8Y4;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rheosoft.obdiiplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -265,7 +284,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L97LVVC8Y4;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rheosoft.obdiiplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -295,6 +316,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D4E8A6E42EB59762003622F4 /* XCLocalSwiftPackageReference "../SwiftOBD2" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SwiftOBD2;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D45AF5292EB59A1C00BD906E /* SwiftOBD2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4E8A6E42EB59762003622F4 /* XCLocalSwiftPackageReference "../SwiftOBD2" */;
+			productName = SwiftOBD2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D47D3F042EB5919C002F9253 /* Project object */;
 }
