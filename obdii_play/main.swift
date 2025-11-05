@@ -23,7 +23,7 @@ let obdService = OBDService(
 
 Task {
     do {
-        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6)
+        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, querySupportedPIDs: false)
         print("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
 
         let troubleCodes = try? await obdService.scanForTroubleCodes()
