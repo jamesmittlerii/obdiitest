@@ -16,13 +16,13 @@ var cancellables = Set<AnyCancellable>()
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
     connectionType: .wifi,
-    host: "localhost",
+    host: "192.168.0.10",
     port: 35000
 )
 
 Task {
     do {
-        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, querySupportedPIDs: true)
+        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, querySupportedPIDs: false)
         print("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
 
         let troubleCodes = try? await obdService.scanForTroubleCodes()
@@ -36,7 +36,7 @@ Task {
         
         // Individual stream for RPM
         obdService
-            .startContinuousUpdates([.mode1(.engineOilTemp),.mode1(.speed)])
+            .startContinuousUpdates([.mode1(.intakeTemp), .mode1(.rpm), .mode1(.fuelPressure)])
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
