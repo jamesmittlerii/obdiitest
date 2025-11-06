@@ -16,7 +16,7 @@ var cancellables = Set<AnyCancellable>()
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
     connectionType: .wifi,
-    host: "192.168.0.10",
+    host: "localhost",
     port: 35000
 )
 
@@ -36,7 +36,7 @@ Task {
         
         // Individual stream for RPM
         obdService
-            .startContinuousUpdates([.mode1(.intakeTemp), .mode1(.rpm), .mode1(.fuelPressure)])
+            .startContinuousUpdates([.mode1(.intakeTemp), .mode1(.rpm), .mode1(.fuelPressure)],interval: 1)
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
