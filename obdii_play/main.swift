@@ -9,7 +9,6 @@ import Combine
 import Foundation
 import SwiftOBD2
 
-print("Hello, World!")
 
 var cancellables = Set<AnyCancellable>()
 
@@ -24,13 +23,13 @@ let obdService = OBDService(
 Task {
     do {
         let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, querySupportedPIDs: false)
-        print("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
+        obdInfo("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
 
         let troubleCodes = try? await obdService.scanForTroubleCodes()
         if let troubleCodes {
-            print("Trouble codes: \(troubleCodes)")
+            obdInfo("Trouble codes: \(troubleCodes)")
         } else {
-            print("Trouble codes: nil (scan failed or returned no data)")
+            obdInfo("Trouble codes: nil (scan failed or returned no data)")
         }
         
         /*
@@ -53,7 +52,7 @@ Task {
         */
 
     } catch {
-        print("Failed to connect/start: \(error)")
+        obdError("Failed to connect/start: \(error)")
     }
 }
 
