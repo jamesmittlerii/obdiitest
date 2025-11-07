@@ -254,8 +254,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "616"
-            endingLineNumber = "616"
+            startingLineNumber = "638"
+            endingLineNumber = "638"
             landmarkName = "extractValue(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,10 +270,70 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "612"
-            endingLineNumber = "612"
+            startingLineNumber = "634"
+            endingLineNumber = "634"
             landmarkName = "extractValue(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
+            landmarkName = "adapterInitialization()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6 - 9de108eb335e8a79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(21) suspend resume partial function for SwiftOBD2.ELM327.adapterInitialization() async throws -&gt; ()"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "347"
+                  endingLineNumber = "347">
+               </Location>
+               <Location
+                  uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6 - c94fcd0a9b748f56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(22) await resume partial function for SwiftOBD2.ELM327.adapterInitialization() async throws -&gt; ()"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "347"
+                  endingLineNumber = "347">
+               </Location>
+               <Location
+                  uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6 - 68d5e560943cc535"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(34) suspend resume partial function for SwiftOBD2.ELM327.adapterInitialization() async throws -&gt; ()"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "347"
+                  endingLineNumber = "347">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
