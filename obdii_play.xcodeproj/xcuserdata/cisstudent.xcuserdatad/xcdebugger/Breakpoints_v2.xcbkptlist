@@ -290,50 +290,238 @@
             endingLineNumber = "347"
             landmarkName = "adapterInitialization()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF1F30FE-1B4A-4657-BAD1-2A09FD0B2475"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "obdii_play/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "obdii_play/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
-                  uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6 - 9de108eb335e8a79"
+                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - f5a34e36efff1242"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(21) suspend resume partial function for SwiftOBD2.ELM327.adapterInitialization() async throws -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for closure #2 () async -&gt; () in obdii_play"
                   moduleName = "obdii_play"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
+                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "347"
-                  endingLineNumber = "347">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
                </Location>
                <Location
-                  uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6 - c94fcd0a9b748f56"
+                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - b00340f2c3220f6d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(22) await resume partial function for SwiftOBD2.ELM327.adapterInitialization() async throws -&gt; ()"
+                  symbolName = "(2) await resume partial function for closure #2 () async -&gt; () in obdii_play"
                   moduleName = "obdii_play"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
+                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "347"
-                  endingLineNumber = "347">
-               </Location>
-               <Location
-                  uuid = "D4999F8A-6064-4803-89C1-9C7A9805CFD6 - 68d5e560943cc535"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(34) suspend resume partial function for SwiftOBD2.ELM327.adapterInitialization() async throws -&gt; ()"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/elm327.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "347"
-                  endingLineNumber = "347">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF30EF3F-2C09-404E-BE98-9A6551A43282"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/bleManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "connectAsync(timeout:peripheral:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DAB91A3-3025-4ACB-B8BC-2205D13AFFAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/bleManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "connectAsync(timeout:peripheral:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B061C98-5F3A-4E0E-AAC3-65E8EB85E5F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/BLEScanner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "withTimeout(seconds:timeoutError:onTimeout:operation:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3839F4C9-564A-437F-A814-67E83DD6C657"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/BLEScanner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "withTimeout(seconds:timeoutError:onTimeout:operation:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E21C8DC3-6C48-4E23-99A4-61ACE72A8530"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/BLEScanner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "startConnection(preferedProtocol:timeout:querySupportedPIDs:peripheral:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - 8a9bbd8628c11c80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130">
+               </Location>
+               <Location
+                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - 29b8dcfaf4b07c83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130">
+               </Location>
+               <Location
+                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - c811830518d3b35e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9655D056-0538-4375-A8F0-6886D3817159"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/BLEScanner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "withTimeout(seconds:timeoutError:onTimeout:operation:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDC62555-84B3-433D-B852-22E9CD8A6E8D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/BLE/BLEScanner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "waitForFirstPeripheral(timeout:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
