@@ -3,13 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in closure #1 in closure #2 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
+      </ContextState>
+      <ContextState
          contextName = "OBDService.requestPID(_:unit:):obd2service.swift">
       </ContextState>
       <ContextState
-         contextName = "BatchedResponse.extractValue(_:):elm327.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in :main.swift">
+         contextName = "closure #2 in closure #2 in :main.swift">
       </ContextState>
       <ContextState
          contextName = "OBDLogger.log(_:level:category:file:function:line:):OBDLogger.swift">
@@ -31,6 +31,28 @@
             </PersistentString>
             <PersistentString
                value = "OSLogType.default.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BatchedResponse.extractValue(_:):elm327.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "measurementResult.measurementResult">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in :main.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FuelStatusDecoder.decode(data:unit:):decoders.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FUEL_STATUS[7 - index]">
+            </PersistentString>
+            <PersistentString
+               value = "FUEL_STATUS[0]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

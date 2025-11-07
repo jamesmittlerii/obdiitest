@@ -39,7 +39,7 @@ Task {
         
         // Individual stream for RPM
         obdService
-            .startContinuousUpdates([.mode1(.intakeTemp), .mode1(.rpm), .mode1(.fuelPressure)],interval: 1)
+            .startContinuousUpdates([.mode1(.fuelStatus)],interval: 1)
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
