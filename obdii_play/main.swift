@@ -20,6 +20,9 @@ let obdService = OBDService(
     port: 35000
 )
 
+let name = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName")
+print(name ?? "nil")
+
 Task {
     do {
         let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, querySupportedPIDs: false)
