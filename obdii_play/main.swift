@@ -54,7 +54,7 @@ Task {
         
         // Individual stream for RPM
         obdService
-            .startContinuousUpdates([.mode1(.controlModuleVoltage)],interval: 1)
+            .startContinuousUpdates([.mode1(.status)],interval: 1)
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
