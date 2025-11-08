@@ -3,13 +3,19 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in :main.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ELM327.requestVin():elm327.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in closure #2 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
       </ContextState>
       <ContextState
          contextName = "OBDService.requestPID(_:unit:):obd2service.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #2 in closure #2 in :main.swift">
       </ContextState>
       <ContextState
          contextName = "OBDLogger.log(_:level:category:file:function:line:):OBDLogger.swift">
@@ -35,6 +41,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "CANParser.init(_:idBits:):parser.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ELM327.getSupportedPIDs():elm327.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pidGetter.properties">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "BatchedResponse.extractValue(_:):elm327.swift">
          <PersistentStrings>
             <PersistentString
@@ -43,7 +60,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in :main.swift">
+         contextName = "ELM327.extractSupportedPIDs(_:):elm327.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WifiManager.sendCommandInternal(data:retries:):wifiManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in closure #2 in :main.swift">
       </ContextState>
       <ContextState
          contextName = "FuelStatusDecoder.decode(data:unit:):decoders.swift">
@@ -55,18 +78,6 @@
                value = "FUEL_STATUS[0]">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "CANParser.init(_:idBits:):parser.swift">
-      </ContextState>
-      <ContextState
-         contextName = "ELM327.requestVin():elm327.swift">
-      </ContextState>
-      <ContextState
-         contextName = "WifiManager.sendCommandInternal(data:retries:):wifiManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in closure #1 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

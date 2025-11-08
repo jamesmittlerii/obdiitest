@@ -15,7 +15,7 @@ var cancellables = Set<AnyCancellable>()
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .demo,
+    connectionType: .wifi,
     host: "localhost",
     port: 35000
 )
@@ -29,20 +29,32 @@ Task {
     
         print("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
         
-        print(obd2Info.supportedPIDs)
+        // Unwrap Optional supportedPIDs explicitly to avoid debug-description warning
+        if let supported = obd2Info.supportedPIDs {
+            print("Supported PIDS: \(supported)")
+        } else {
+            print("Supported PIDS: none")
+        }
 
         let troubleCodes = try? await obdService.scanForTroubleCodes()
         if let troubleCodes {
-            print("Trouble codes: \(troubleCodes)")
+            // Make the dictionary output readable
+            if troubleCodes.isEmpty {
+                print("Trouble codes: none")
+            } else {
+                let formatted = troubleCodes.map { ecuid, codes in
+                    let list = codes.map { "\($0)" }.joined(separator: ", ")
+                    return "\(ecuid): [\(list)]"
+                }.joined(separator: " | ")
+                print("Trouble codes: \(formatted)")
+            }
         } else {
             print("Trouble codes: nil (scan failed or returned no data)")
         }
         
-        
-        
         // Individual stream for RPM
         obdService
-            .startContinuousUpdates([.mode1(.fuelStatus)],interval: 1)
+            .startContinuousUpdates([.mode1(.status)],interval: 1)
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
