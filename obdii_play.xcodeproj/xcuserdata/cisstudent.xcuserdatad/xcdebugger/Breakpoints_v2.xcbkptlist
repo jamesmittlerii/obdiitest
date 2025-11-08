@@ -14,8 +14,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "359"
-            endingLineNumber = "359"
+            startingLineNumber = "396"
+            endingLineNumber = "396"
             landmarkName = "OBDService"
             landmarkType = "3">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "375"
-            endingLineNumber = "375"
+            startingLineNumber = "412"
+            endingLineNumber = "412"
             landmarkName = "clearTroubleCodes()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
             landmarkName = "OBDService"
             landmarkType = "3">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "349"
-            endingLineNumber = "349"
+            startingLineNumber = "386"
+            endingLineNumber = "386"
             landmarkName = "sendCommand(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "389"
+            endingLineNumber = "389"
             landmarkName = "OBDService"
             landmarkType = "3">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "obdii_play/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "obdii_play/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
             landmarkName = "startContinuousUpdates(_:unit:interval:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "327"
-            endingLineNumber = "327"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
             landmarkName = "requestPID(_:unit:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,36 +322,6 @@
             endingLineNumber = "28"
             landmarkName = "unknown"
             landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - f5a34e36efff1242"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 () async -&gt; () in obdii_play"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-               <Location
-                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - b00340f2c3220f6d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #2 () async -&gt; () in obdii_play"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -366,7 +336,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "239"
             endingLineNumber = "239"
-            landmarkName = "connectAsync(timeout:peripheral:)"
+            landmarkName = "willRestoreState(_:dict:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -436,60 +406,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "startConnection(preferedProtocol:timeout:querySupportedPIDs:peripheral:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - 8a9bbd8628c11c80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130">
-               </Location>
-               <Location
-                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - 29b8dcfaf4b07c83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130">
-               </Location>
-               <Location
-                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - c811830518d3b35e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -521,6 +447,22 @@
             startingLineNumber = "72"
             endingLineNumber = "72"
             landmarkName = "waitForFirstPeripheral(timeout:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22D85350-1803-4055-880E-6818E7632616"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SwiftOBD2/Sources/SwiftOBD2/Communication/wifiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "connectAsync(timeout:peripheral:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

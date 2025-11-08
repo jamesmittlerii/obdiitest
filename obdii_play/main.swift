@@ -15,7 +15,7 @@ var cancellables = Set<AnyCancellable>()
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .bluetooth,
+    connectionType: .demo,
     host: "localhost",
     port: 35000
 )
@@ -25,8 +25,11 @@ print(name ?? "nil")
 
 Task {
     do {
-        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 10, querySupportedPIDs: false)
+        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 10, querySupportedPIDs: true)
+    
         print("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
+        
+        print(obd2Info.supportedPIDs)
 
         let troubleCodes = try? await obdService.scanForTroubleCodes()
         if let troubleCodes {
@@ -39,7 +42,7 @@ Task {
         
         // Individual stream for RPM
         obdService
-            .startContinuousUpdates([.mode1(.rpm)],interval: 1)
+            .startContinuousUpdates([.mode1(.fuelStatus)],interval: 1)
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
