@@ -15,14 +15,14 @@ var cancellables = Set<AnyCancellable>()
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .demo,
+    connectionType: .bluetooth,
     host: "localhost",
     port: 35000
 )
 
 Task {
     do {
-        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 10, querySupportedPIDs: true)
+        let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 20, querySupportedPIDs: true)
     
         obdWarning("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
         
