@@ -190,8 +190,8 @@
             filePath = "obdii_play/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "obdii_play/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -295,22 +295,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BF1F30FE-1B4A-4657-BAD1-2A09FD0B2475"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "obdii_play/main.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -318,8 +302,8 @@
             filePath = "obdii_play/main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -501,17 +485,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9E52F946-E4A0-4C8F-B4E7-649C364D8FE6"
+            uuid = "E2905F19-EBB0-4AF4-88BE-3E5A4ABAA128"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/decoders.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "958"
-            endingLineNumber = "958"
+            startingLineNumber = "961"
+            endingLineNumber = "961"
             landmarkName = "decode(data:unit:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2905F19-EBB0-4AF4-88BE-3E5A4ABAA128 - 26081c917debc6b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftOBD2.StatusDecoder2.decode(data: Foundation.Data, unit: SwiftOBD2.MeasurementUnit) -&gt; Swift.Result&lt;SwiftOBD2.DecodeResult, SwiftOBD2.DecodeError&gt;"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/decoders.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "967"
+                  endingLineNumber = "967">
+               </Location>
+               <Location
+                  uuid = "E2905F19-EBB0-4AF4-88BE-3E5A4ABAA128 - 63f6e52deae90ca1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftOBD2.StatusDecoder.decode(data: Foundation.Data, unit: SwiftOBD2.MeasurementUnit) -&gt; Swift.Result&lt;SwiftOBD2.DecodeResult, SwiftOBD2.DecodeError&gt;"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/decoders.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "961"
+                  endingLineNumber = "961">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

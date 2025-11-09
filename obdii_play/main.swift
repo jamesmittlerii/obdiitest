@@ -20,9 +20,6 @@ let obdService = OBDService(
     port: 35000
 )
 
-let name = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName")
-print(name ?? "nil")
-
 Task {
     do {
         let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 10, querySupportedPIDs: true)
@@ -52,6 +49,10 @@ Task {
             print("Trouble codes: nil (scan failed or returned no data)")
         }
         
+        
+        let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
+        print(response)
+        /*
         // Individual stream for RPM
         obdService
             .startContinuousUpdates([.mode1(.status)],interval: 1)
@@ -67,6 +68,7 @@ Task {
                 }
             )
             .store(in: &cancellables)
+         */
 
         
 
