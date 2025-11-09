@@ -24,29 +24,29 @@ Task {
     do {
         let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 10, querySupportedPIDs: true)
     
-        print("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
+        obdWarning("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
         
         // Unwrap Optional supportedPIDs explicitly to avoid debug-description warning
         if let supported = obd2Info.supportedPIDs {
-            print("Supported PIDS: \(supported)")
+            obdInfo("Supported PIDS: \(supported)")
         } else {
-            print("Supported PIDS: none")
+            obdWarning("Supported PIDS: none")
         }
 
         let troubleCodes = try? await obdService.scanForTroubleCodes()
         if let troubleCodes {
             // Make the dictionary output readable
             if troubleCodes.isEmpty {
-                print("Trouble codes: none")
+                obdInfo("Trouble codes: none")
             } else {
                 let formatted = troubleCodes.map { ecuid, codes in
                     let list = codes.map { "\($0)" }.joined(separator: ", ")
                     return "\(ecuid): [\(list)]"
                 }.joined(separator: " | ")
-                print("Trouble codes: \(formatted)")
+                obdInfo("Trouble codes: \(formatted)")
             }
         } else {
-            print("Trouble codes: nil (scan failed or returned no data)")
+            obdInfo("Trouble codes: nil (scan failed or returned no data)")
         }
         
         

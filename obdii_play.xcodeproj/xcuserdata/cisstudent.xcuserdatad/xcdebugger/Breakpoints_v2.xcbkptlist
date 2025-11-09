@@ -296,7 +296,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "obdii_play/main.swift"
@@ -306,6 +306,50 @@
             endingLineNumber = "25"
             landmarkName = "unknown"
             landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - faf81b9095e9ef2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in obdii_play"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+               <Location
+                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - a5421eb3befc4801"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in obdii_play"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+               <Location
+                  uuid = "5A8DDD58-7103-491D-9590-D908EE64A09D - ab8d709f26601035"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #1 () async -&gt; () in obdii_play"
+                  moduleName = "obdii_play"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cisstudent/Documents/git/obdii_play/obdii_play/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -486,7 +530,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E2905F19-EBB0-4AF4-88BE-3E5A4ABAA128"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/decoders.swift"
