@@ -94,8 +94,8 @@
             filePath = "../SwiftOBD2/Sources/SwiftOBD2/Logging/OBDLogger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "log(_:level:category:file:function:line:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -496,36 +496,6 @@
             endingLineNumber = "961"
             landmarkName = "decode(data:unit:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E2905F19-EBB0-4AF4-88BE-3E5A4ABAA128 - 26081c917debc6b6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SwiftOBD2.StatusDecoder2.decode(data: Foundation.Data, unit: SwiftOBD2.MeasurementUnit) -&gt; Swift.Result&lt;SwiftOBD2.DecodeResult, SwiftOBD2.DecodeError&gt;"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/decoders.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "967"
-                  endingLineNumber = "967">
-               </Location>
-               <Location
-                  uuid = "E2905F19-EBB0-4AF4-88BE-3E5A4ABAA128 - 63f6e52deae90ca1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SwiftOBD2.StatusDecoder.decode(data: Foundation.Data, unit: SwiftOBD2.MeasurementUnit) -&gt; Swift.Result&lt;SwiftOBD2.DecodeResult, SwiftOBD2.DecodeError&gt;"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/decoders.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "961"
-                  endingLineNumber = "961">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
