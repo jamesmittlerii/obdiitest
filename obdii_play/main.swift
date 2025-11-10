@@ -8,17 +8,57 @@
 import Combine
 import Foundation
 import SwiftOBD2
+import OSLog
 
+struct LogEntry: Codable, Sendable {
+    let timestamp: Date
+    let category: String
+    let subsystem: String
+    let message: String
+}
 
 var cancellables = Set<AnyCancellable>()
 
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .bluetooth,
+    connectionType: .demo,
     host: "localhost",
     port: 35000
 )
+
+func collectLogs(since: TimeInterval = -300) async throws -> Data {
+    let subsystem = "com.swiftobd2.library"
+    // 1. Open the log store for the current process
+    let logStore = try OSLogStore(scope: .currentProcessIdentifier)
+
+    // 2. Define a time range (e.g., last minute)
+    let oneMinAgo = logStore.position(date: Date().addingTimeInterval(since))
+
+    // 3. Fetch all entries since that position
+    let allEntries = try logStore.getEntries(at: oneMinAgo)
+
+    // 4. Narrow to OSLogEntryLog first to ease type-checking
+    let logEntries = allEntries.compactMap { $0 as? OSLogEntryLog }
+
+    // 5. Filter by subsystem and category
+    let filtered = logEntries.filter {
+        $0.subsystem == subsystem && ($0.category == "Connection" || $0.category == "Communication")
+    }
+
+    // 6. Map to your LogEntry structure
+    let appLogs: [LogEntry] = filtered.map { entry in
+        LogEntry(
+            timestamp: entry.date,
+            category: entry.category,
+            subsystem: entry.subsystem,
+            message: entry.composedMessage // Respects privacy masks
+        )
+    }
+
+    let jsonData = try JSONEncoder().encode(appLogs)
+    return jsonData
+}
 
 Task {
     do {
@@ -52,6 +92,8 @@ Task {
         
         let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
         print(response)
+        
+        let json = try await collectLogs()
         /*
         // Individual stream for RPM
         obdService
@@ -69,6 +111,9 @@ Task {
             )
             .store(in: &cancellables)
          */
+        
+        
+     
 
         
 
