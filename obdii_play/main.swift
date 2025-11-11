@@ -22,7 +22,7 @@ var cancellables = Set<AnyCancellable>()
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .bluetooth,
+    connectionType: .demo,
     host: "localhost",
     port: 35000
 )
@@ -93,6 +93,28 @@ Task {
         
         let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
         print(response)
+        
+        print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
+        print(try await obdService.requestPID(.GMmode22(.engineOilPressure), unit: MeasurementUnit.metric))
+        print(try await obdService.requestPID(.GMmode22(.engineOilTemp), unit: MeasurementUnit.metric))
+        print(try await obdService.requestPID(.GMmode22(.transFluidTemp), unit: MeasurementUnit.metric))
+        
+        
+        //print(try await obdService.sendCommand("221154"))
+        //print(try await obdService.sendCommand("221470"))
+        //print(try await obdService.sendCommand("221940"))
+        //print(try await obdService.sendCommand("221144"))
+       // print(try await obdService.sendCommand("221161"))
+        //print(try await obdService.sendCommand("22162B"))
+        //print(try await obdService.sendCommand("221310"))
+        //print(try await obdService.sendCommand("2201"))
+        
+        print(try await obdService.requestPID(.mode1(.rpm), unit: MeasurementUnit.metric))
+        
+        
+        let response2 = try await obdService.requestPID(.mode1(.ambientAirTemp), unit: MeasurementUnit.metric)
+        print(response2)
+       
         
         let json = try await collectLogs()
         /*

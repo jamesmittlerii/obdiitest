@@ -3,13 +3,21 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in closure #1 in closure #1 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
+         contextName = "static OBDCommand.from(command:):commands.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "OBDCommand.allCommands[202].properties">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in :main.swift">
       </ContextState>
       <ContextState
          contextName = "ELM327.requestVin():elm327.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in closure #1 in closure #2 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
