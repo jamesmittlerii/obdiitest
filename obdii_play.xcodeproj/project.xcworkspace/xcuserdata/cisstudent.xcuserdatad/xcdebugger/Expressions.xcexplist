@@ -11,6 +11,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "TemperatureDecoder.decode(data:unit:):decoders.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bytesToInt(data)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in :main.swift">
       </ContextState>
       <ContextState
@@ -62,6 +70,12 @@
       <ContextState
          contextName = "BatchedResponse.extractValue(_:):elm327.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "response.map { String(format: &quot;%02X&quot;, $0) }.joined()">
+            </PersistentString>
+            <PersistentString
+               value = "response">
+            </PersistentString>
             <PersistentString
                value = "measurementResult.measurementResult">
             </PersistentString>

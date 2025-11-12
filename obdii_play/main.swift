@@ -94,8 +94,9 @@ Task {
         let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
         print(response)
         
-        print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.GMmode22(.engineOilPressure), unit: MeasurementUnit.metric))
+      //  print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
+      //  print(try await obdService.requestPID(.GMmode22(.engineOilPressure), unit: MeasurementUnit.metric))
+        print(try await obdService.requestPID(.mode1(.engineOilTemp), unit: MeasurementUnit.metric))
         print(try await obdService.requestPID(.GMmode22(.engineOilTemp), unit: MeasurementUnit.metric))
         print(try await obdService.requestPID(.GMmode22(.transFluidTemp), unit: MeasurementUnit.metric))
         
@@ -109,12 +110,15 @@ Task {
         //print(try await obdService.sendCommand("221310"))
         //print(try await obdService.sendCommand("2201"))
         
+        /*
         print(try await obdService.requestPID(.mode1(.rpm), unit: MeasurementUnit.metric))
         
         
         let response2 = try await obdService.requestPID(.mode1(.ambientAirTemp), unit: MeasurementUnit.metric)
         print(response2)
        
+        let pid = OBDCommand.GMMode22.engineOilPressure
+        */
         
         let json = try await collectLogs()
         /*
