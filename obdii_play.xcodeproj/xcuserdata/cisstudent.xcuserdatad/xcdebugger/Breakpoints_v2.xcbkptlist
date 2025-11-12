@@ -336,50 +336,6 @@
             endingLineNumber = "153"
             landmarkName = "startConnection(preferedProtocol:timeout:querySupportedPIDs:peripheral:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - 8a9bbd8628c11199"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153">
-               </Location>
-               <Location
-                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - 29b8dcfaf4b0719a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153">
-               </Location>
-               <Location
-                  uuid = "0F37C4A6-1105-44CE-BBBD-CBB13091D744 - c811830518d3be47"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for SwiftOBD2.OBDService.startConnection(preferedProtocol: Swift.Optional&lt;SwiftOBD2.PROTOCOL&gt;, timeout: Swift.Double, querySupportedPIDs: Swift.Bool, peripheral: Swift.Optional&lt;__C.CBPeripheral&gt;) async throws -&gt; SwiftOBD2.OBDInfo"
-                  moduleName = "obdii_play"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cisstudent/Documents/git/SwiftOBD2/Sources/SwiftOBD2/obd2service.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
