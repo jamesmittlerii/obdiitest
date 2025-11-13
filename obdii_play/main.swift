@@ -94,6 +94,11 @@ Task {
         let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
         print(response)
         
+         
+        
+        print(try await obdService.requestPID(.mode1(.evapVaporPressure), unit: MeasurementUnit.metric))
+        
+        
       //  print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
       //  print(try await obdService.requestPID(.GMmode22(.engineOilPressure), unit: MeasurementUnit.metric))
         print(try await obdService.requestPID(.mode1(.engineOilTemp), unit: MeasurementUnit.metric))

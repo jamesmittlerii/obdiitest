@@ -25,9 +25,6 @@
          contextName = "ELM327.requestVin():elm327.swift">
       </ContextState>
       <ContextState
-         contextName = "closure #1 in closure #1 in closure #1 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in closure #1 in closure #2 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
       </ContextState>
       <ContextState
@@ -39,7 +36,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in OBDService.startContinuousUpdates(_:unit:interval:):obd2service.swift">
+      </ContextState>
+      <ContextState
          contextName = "OBDService.requestPID(_:unit:):obd2service.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ELM327.getSupportedPIDs():elm327.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pidGetter.properties">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "OBDLogger.log(_:level:category:file:function:line:):OBDLogger.swift">
@@ -68,14 +76,6 @@
          contextName = "CANParser.init(_:idBits:):parser.swift">
       </ContextState>
       <ContextState
-         contextName = "ELM327.getSupportedPIDs():elm327.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "pidGetter.properties">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "BatchedResponse.extractValue(_:):elm327.swift">
          <PersistentStrings>
             <PersistentString
@@ -97,6 +97,14 @@
       </ContextState>
       <ContextState
          contextName = "WifiManager.sendCommandInternal(data:retries:):wifiManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "EvapPressureDecoder.decode(data:unit:):decoders.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data.map { String(format: &quot;%02X&quot;, $0) }.joined()">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #2 in closure #2 in :main.swift">
