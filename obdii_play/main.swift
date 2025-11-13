@@ -96,7 +96,7 @@ Task {
         
          
         
-        print(try await obdService.requestPID(.mode1(.evapVaporPressure), unit: MeasurementUnit.metric))
+        print(try await obdService.requestPID(.mode1(.fuelRailPressureAbs), unit: MeasurementUnit.metric))
         
         
       //  print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
