@@ -104,9 +104,9 @@ Task {
         
       //  print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
       //  print(try await obdService.requestPID(.GMmode22(.engineOilPressure), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.mode1(.engineOilTemp), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.GMmode22(.engineOilTemp), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.GMmode22(.transFluidTemp), unit: MeasurementUnit.metric))
+       // print(try await obdService.requestPID(.mode1(.engineOilTemp), unit: MeasurementUnit.metric))
+       // print(try await obdService.requestPID(.GMmode22(.engineOilTemp), unit: MeasurementUnit.metric))
+       // print(try await obdService.requestPID(.GMmode22(.transFluidTemp), unit: MeasurementUnit.metric))
         
         
         //print(try await obdService.sendCommand("221154"))
