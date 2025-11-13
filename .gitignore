@@ -1,0 +1,8 @@
+# Xcode user data and debugger breakpoints
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+**/xcuserdata/**
+**/xcdebugger/**
