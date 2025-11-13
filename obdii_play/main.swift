@@ -97,9 +97,9 @@ Task {
          
         
         //print(try await obdService.requestPID(.mode1(.O2Sensor7WRCurrent), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.mode1(.fuelRailPressureAbs), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.mode1(.fuelRailPressureDirect), unit: MeasurementUnit.metric))
-        print(try await obdService.requestPID(.mode1(.fuelRailPressureVac), unit: MeasurementUnit.metric))
+       // print(try await obdService.requestPID(.mode1(.fuelRailPressureAbs), unit: MeasurementUnit.metric))
+        print(try await obdService.requestPID(.mode1(.fuelRailPressureDirect), unit: MeasurementUnit.imperial))
+       // print(try await obdService.requestPID(.mode1(.fuelRailPressureVac), unit: MeasurementUnit.metric))
         
         
       //  print(try await obdService.requestPID(.GMmode22(.ACHighPressure), unit: MeasurementUnit.metric))
