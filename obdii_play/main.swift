@@ -22,7 +22,7 @@ var cancellables = Set<AnyCancellable>()
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .demo,
+    connectionType: .wifi,
     host: "localhost",
     port: 35000
 )
@@ -131,8 +131,8 @@ Task {
         let pid = OBDCommand.GMMode22.engineOilPressure
         */
         
-        let json = try await collectLogs()
-        /*
+       // let json = try await collectLogs()
+        
         // Individual stream for RPM
         obdService
             .startContinuousUpdates([.mode1(.status)],interval: 1)
@@ -148,7 +148,7 @@ Task {
                 }
             )
             .store(in: &cancellables)
-         */
+         
     } catch {
         obdError("Failed to connect/start: \(error)")
     }
