@@ -22,8 +22,8 @@ var cancellables = Set<AnyCancellable>()
 // Keep OBDService alive for the lifetime of the tool.
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
-    connectionType: .wifi,
-    host: "localhost",
+    connectionType: .demo,
+    host: "192.168.0.10",
     port: 35000
 )
 
@@ -91,7 +91,10 @@ Task {
         }
         
         
-        let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
+        //let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
+        //print(response)
+        
+        let response = try await obdService.requestPID(.mode3(.GET_DTC), unit: MeasurementUnit.metric)
         print(response)
         
         print(try await obdService.requestPID(.mode1(.fuelInjectionTiming), unit: MeasurementUnit.metric))
