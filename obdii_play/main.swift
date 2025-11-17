@@ -91,11 +91,11 @@ Task {
         }
         
         
-        //let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
-        //print(response)
-        
-        let response = try await obdService.requestPID(.mode3(.GET_DTC), unit: MeasurementUnit.metric)
+        let response = try await obdService.requestPID(.mode1(.status), unit: MeasurementUnit.metric)
         print(response)
+        
+        let response2 = try await obdService.requestPID(.mode3(.GET_DTC), unit: MeasurementUnit.metric)
+        print(response2)
         
         print(try await obdService.requestPID(.mode1(.fuelInjectionTiming), unit: MeasurementUnit.metric))
         //print(try await obdService.requestPID(.mode1(.runTimeMIL), unit: MeasurementUnit.imperial))
