@@ -23,7 +23,7 @@ var cancellables = Set<AnyCancellable>()
 //let obdService = OBDService(connectionType: .demo)
 let obdService = OBDService(
     connectionType: .demo,
-    host: "192.168.0.10",
+    host: "localhost",
     port: 35000
 )
 
