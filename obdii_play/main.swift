@@ -62,7 +62,21 @@ func collectLogs(since: TimeInterval = -300) async throws -> Data {
 
 Task {
     do {
+        let myCommand = OBDCommand.GMmode22(.engineOilPressure)
         
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        
+        if let jsonData = try? encoder.encode(myCommand),
+           let jsonString = String(data: jsonData, encoding: .utf8) {
+            print("Serialized OBDCommand:")
+            print(jsonString)
+        } else {
+            print("Failed to serialize myCommand")
+        }
+
+       
+
         let obd2Info = try await obdService.startConnection(preferedProtocol: .protocol6, timeout: 20, querySupportedPIDs: true)
     
         obdInfo("Connected. VIN info: \(obd2Info.vin ?? "Unknown")")
@@ -137,6 +151,7 @@ Task {
        // let json = try await collectLogs()
         
         // Individual stream for RPM
+        /*
         obdService
             .startContinuousUpdates([.mode1(.status)],interval: 1)
             .sink(
@@ -150,7 +165,7 @@ Task {
                     print(measurements)
                 }
             )
-            .store(in: &cancellables)
+            .store(in: &cancellables)*/
          
     } catch {
         obdError("Failed to connect/start: \(error)")
